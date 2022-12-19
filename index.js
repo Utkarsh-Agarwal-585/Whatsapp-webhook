@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const app = express().use(bodyParser.json());
 app.use(cors());
 app.use(express.urlencoded({extended: true}));
+require('dotenv').config();
 // app.use(express.json());
 // const router = express.Router()
 // const test = require('./routes/rhizitest')
